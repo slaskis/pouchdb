@@ -3,7 +3,7 @@
 'use strict';
 
 var test = require('tape');
-var PouchMerge = require('../../src/pouch.merge.js');
+var PouchMerge = require('../../lib/merge');
 
 var merge = PouchMerge.merge;
 var winningRev = PouchMerge.winningRev;

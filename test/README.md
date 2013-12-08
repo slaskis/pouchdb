@@ -5,12 +5,8 @@ run tests in both browser + node, to run the current test suite
 
 for node, and
 
-    $ browserify test/unit/merge_rev_tree_test.js | testling
+    $ browserify test/unit/merge_rev_tree_test.js | ./node_modules/.bin/testling -u
 
 for the browser.
 
-Currently this requires manual shutdown of the browser in OSX, you must
-also:
-
-    $ npm install tape
     $ npm install -g testling
