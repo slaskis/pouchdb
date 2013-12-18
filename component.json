@@ -11,8 +11,26 @@
   "dependencies": {},
   "development": {},
   "license": "Apache",
-  "main": "dist/pouchdb-nightly.js",
+  "main": "lib/index.js",
   "scripts": [
-    "dist/pouchdb-nightly.js"
+    "lib/index.js",
+    "lib/merge.js",
+    "lib/constructor.js",
+    "lib/replicate.js",
+    "lib/setup.js",
+    "lib/utils.js",
+    "lib/version.js",
+    "lib/adapter.js",
+    "lib/adapters/http.js",
+    "lib/adapters/idb.js",
+    "lib/adapters/websql.js",
+    "lib/deps/ajax.js",
+    "lib/deps/blob.js",
+    "lib/deps/errors.js",
+    "lib/deps/extend.js",
+    "lib/deps/md5.js",
+    "lib/deps/uuid.js",
+    "lib/plugins/pouchdb.gql.js",
+    "lib/plugins/pouchdb.spatial.js"
   ]
 }
