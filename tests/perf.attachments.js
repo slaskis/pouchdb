@@ -59,9 +59,7 @@ describe('performance',function(){
                       console.log("write doc2/string2 took " + writeDuration2 + " ms");
                       console.log("query before attachments took " + queryDuration1 + " ms");
                       console.log("query after attachments took " + queryDuration2 + " ms");
-                      // try {
-                        queryDuration2.should.be.below(0);
-                      // } catch(e){ return done(e) }
+                      queryDuration2.should.be.below(0);
                       done();
                     });
                   });
@@ -96,9 +94,7 @@ describe('performance',function(){
                       console.log("write doc2/buffer2 took " + writeDuration2 + " ms");
                       console.log("query before attachments took " + queryDuration1 + " ms");
                       console.log("query after attachments took " + queryDuration2 + " ms");
-                      try {
-                        queryDuration2.should.be.below(Math.max(1,queryDuration1 * 10));
-                      } catch(e){ return done(e) }
+                      queryDuration2.should.be.below(Math.max(1,queryDuration1 * 10));
                       done();
                     });
                   });
@@ -133,9 +129,7 @@ describe('performance',function(){
                       console.log("write doc2/buffer1 took " + writeDuration2 + " ms");
                       console.log("query before attachments took " + queryDuration1 + " ms");
                       console.log("query after attachments took " + queryDuration2 + " ms");
-                      try {
-                        queryDuration2.should.be.below(Math.max(1,queryDuration1 * 10));
-                      } catch(e){ return done(e) }
+                      queryDuration2.should.be.below(Math.max(1,queryDuration1 * 10));
                       done();
                     });
                   });
@@ -168,9 +162,7 @@ describe('performance',function(){
                     console.log("write doc1/buffer1 took " + writeDuration2 + " ms");
                     console.log("query before attachments took " + queryDuration1 + " ms");
                     console.log("query after attachments took " + queryDuration2 + " ms");
-                    try {
-                      queryDuration2.should.be.below(Math.max(1,queryDuration1 * 10));
-                    } catch(e){ return done(e) }
+                    queryDuration2.should.be.below(Math.max(1,queryDuration1 * 10));
                     done();
                   });
                 });
